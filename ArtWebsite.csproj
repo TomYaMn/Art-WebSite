@@ -1,0 +1,333 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93D18F6F-0C3A-42DF-A991-4D65377A04E3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assignment</RootNamespace>
+    <AssemblyName>Assignment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\UserAuthentication.mdf" />
+    <Content Include="App_Data\UserAuthentication_log.ldf">
+      <DependentUpon>UserAuthentication.mdf</DependentUpon>
+    </Content>
+    <Content Include="ArtItemPurchaseUserControl.ascx" />
+    <Content Include="ArtPiece.aspx" />
+    <Content Include="Buy.aspx" />
+    <Content Include="Cart.aspx" />
+    <Content Include="Favourite.aspx" />
+    <Content Include="Gallery.aspx" />
+    <Content Include="Images\CartLogo.png" />
+    <Content Include="Images\EbichuLove.gif" />
+    <Content Include="Images\EbichuPaiseh.gif" />
+    <Content Include="Images\LoveBlinkBlink.gif" />
+    <Content Include="Images\ShakingDance.gif" />
+    <Content Include="Images\favoritesLogo.png" />
+    <Content Include="Images\Guweiz1.jpg" />
+    <Content Include="Images\Guweiz4.jpg" />
+    <Content Include="Images\Guweiz5.jpg" />
+    <Content Include="Images\Guweiz6.jpg" />
+    <Content Include="Images\loginLogo.png" />
+    <Content Include="Images\logoutLogo.png" />
+    <Content Include="Images\StarBlinkBlink.gif" />
+    <Content Include="Images\thumbUp.png" />
+    <Content Include="Images\TopRowImage.jpg" />
+    <Content Include="Images\TopRowImage2.jpg" />
+    <Content Include="Images\webLogo.png" />
+    <Content Include="LogInPage.aspx" />
+    <Content Include="News.aspx" />
+    <Content Include="NonPrimeUserControl.ascx" />
+    <Content Include="PremiumPurchaseUserControl.ascx" />
+    <Content Include="Prime.aspx" />
+    <Content Include="PrimePageImages\Casino_TUT.gif" />
+    <Content Include="PrimePageImages\CASINO_TUT.jpg" />
+    <Content Include="PrimePageImages\GodOfWarTwitchCover.jpg" />
+    <Content Include="PrimePageImages\Mel1.jpg" />
+    <Content Include="PrimePageImages\Mel2.jpg" />
+    <Content Include="PrimePageImages\Mel3.jpg" />
+    <Content Include="PrimePageImages\Mel4.jpg" />
+    <Content Include="PrimePageImages\Mel5.jpg" />
+    <Content Include="PrimePageImages\Mel6.jpg" />
+    <Content Include="PrimePageImages\Mel7.jpg" />
+    <Content Include="PrimePageImages\Mel8.jpg" />
+    <Content Include="PrimePageImages\Mel9.jpg" />
+    <Content Include="PrimePageImages\TheHumanEye.jpg" />
+    <Content Include="PrimePageImages\TheHumanEye_Modelling.jpg" />
+    <Content Include="PrimeTutorial1.aspx" />
+    <Content Include="PrimeTutorial3.aspx" />
+    <Content Include="PrimeUserControl.ascx" />
+    <Content Include="Sell.aspx" />
+    <Content Include="Shop.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="GalleryUpload.aspx" />
+    <Content Include="PrimeTutorial2.aspx" />
+    <Content Include="Payment.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArtItemPurchaseUserControl.ascx.cs">
+      <DependentUpon>ArtItemPurchaseUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtItemPurchaseUserControl.ascx.designer.cs">
+      <DependentUpon>ArtItemPurchaseUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtPiece.aspx.cs">
+      <DependentUpon>ArtPiece.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtPiece.aspx.designer.cs">
+      <DependentUpon>ArtPiece.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buy.aspx.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buy.aspx.designer.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Favourite.aspx.cs">
+      <DependentUpon>Favourite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Favourite.aspx.designer.cs">
+      <DependentUpon>Favourite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInPage.aspx.cs">
+      <DependentUpon>LogInPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogInPage.aspx.designer.cs">
+      <DependentUpon>LogInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainMaster.Master.cs">
+      <DependentUpon>mainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainMaster.Master.designer.cs">
+      <DependentUpon>mainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NonPrimeUserControl.ascx.cs">
+      <DependentUpon>NonPrimeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NonPrimeUserControl.ascx.designer.cs">
+      <DependentUpon>NonPrimeUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PremiumPurchaseUserControl.ascx.cs">
+      <DependentUpon>PremiumPurchaseUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PremiumPurchaseUserControl.ascx.designer.cs">
+      <DependentUpon>PremiumPurchaseUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Prime.aspx.cs">
+      <DependentUpon>Prime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prime.aspx.designer.cs">
+      <DependentUpon>Prime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrimeTutorial1.aspx.cs">
+      <DependentUpon>PrimeTutorial1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrimeTutorial1.aspx.designer.cs">
+      <DependentUpon>PrimeTutorial1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrimeTutorial3.aspx.cs">
+      <DependentUpon>PrimeTutorial3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrimeTutorial3.aspx.designer.cs">
+      <DependentUpon>PrimeTutorial3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrimeUserControl.ascx.cs">
+      <DependentUpon>PrimeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrimeUserControl.ascx.designer.cs">
+      <DependentUpon>PrimeUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sell.aspx.cs">
+      <DependentUpon>Sell.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sell.aspx.designer.cs">
+      <DependentUpon>Sell.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop.aspx.cs">
+      <DependentUpon>Shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop.aspx.designer.cs">
+      <DependentUpon>Shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryUpload.aspx.cs">
+      <DependentUpon>GalleryUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleryUpload.aspx.designer.cs">
+      <DependentUpon>GalleryUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrimeTutorial2.aspx.cs">
+      <DependentUpon>PrimeTutorial2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrimeTutorial2.aspx.designer.cs">
+      <DependentUpon>PrimeTutorial2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mainMaster.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53258</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
